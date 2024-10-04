@@ -1,0 +1,128 @@
+@for $i from 1 through 10
+  .font-size-#{$i * 2 + 10}
+    font-size: 10px + ($i * 2) !important
+    line-height: 14px + ($i * 2) !important
+
+@for $i from 0 through 10
+  .z-index-#{$i}
+    z-index: $i
+
+.w-auto
+  width: auto !important
+
+.w-screen
+  width: 100vh !important
+
+.w-100
+  width: 100% !important
+
+.h-auto
+  height: auto !important
+
+.h-screen
+  height: 100vh !important
+
+.h-100
+  height: 100% !important
+
+.elevation-s-0
+  // 图片阴影
+  box-shadow: $elevation-s-0 !important
+
+.elevation-s-1
+  // gmail写邮件悬浮按钮阴影
+  box-shadow: $elevation-s-1 !important
+
+.elevation-s-2
+  // gmail右上角帮助icon弹出小菜单阴影
+  box-shadow: $elevation-s-2 !important
+
+.elevation-s-3
+  // gmail点击帮助icon弹出的帮助大菜单的阴影
+  box-shadow: $elevation-s-3 !important
+
+.elevation-m-1
+  // gmail右侧菜单竖着的icon点击出现的大菜单的阴影
+  box-shadow: $elevation-m-1 !important
+
+.elevation-m-2
+  // gmail点击写邮件弹出的写邮件菜单页面阴影
+  box-shadow: $elevation-m-2 !important
+
+.elevation-bar
+  box-shadow: $elevation-bar !important
+
+.elevation-dialog
+  box-shadow: $elevation-dialog !important
+
+.pos-relative
+  position: relative !important
+
+.pos-absolute
+  position: absolute !important
+
+@for $i from 0 through 127
+  .pos-l-#{$i}
+    left: $i * 1px
+
+@for $i from 0 through 127
+  .pos-t-#{$i}
+    top: $i * 1px
+
+@for $i from 0 through 127
+  .pos-r-#{$i}
+    right: $i * 1px
+
+@for $i from 0 through 127
+  .pos-b-#{$i}
+    bottom: $i * 1px
+
+@for $i from 0 through 127
+  .pos-ln-#{$i}
+    left: $i * (-1px)
+
+@for $i from 0 through 127
+  .pos-tn-#{$i}
+    top: $i * (-1px)
+
+@for $i from 0 through 127
+  .pos-rn-#{$i}
+    right: $i * (-1px)
+
+@for $i from 0 through 127
+  .pos-bn-#{$i}
+    bottom: $i * (-1px)
+
+.flex-1
+  flex: 1 !important
+
+.flex-none
+  flex: none !important
+
+.cur-auto
+  cursor: auto !important
+
+.cur-default
+  cursor: default !important
+
+.cur-pointer
+  cursor: pointer !important
+
+.us-auto
+  user-select: auto !important
+
+.us-none
+  user-select: none !important
+
+.hidden-scrollbar
+  scrollbar-width: none !important
+  -webkit-scrollbar-width: none !important
+  -ms-overflow-style: none !important
+
+  &::-webkit-scrollbar
+    display: none !important
+
+.sheet-gradient
+  z-index: 2
+  position: relative
+  background: $shinra-gradient !important
